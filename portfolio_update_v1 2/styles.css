@@ -26,6 +26,7 @@ a:hover {
 .main-nav {
   width: 100%;
   background: black;
+  opacity: .7;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -44,24 +45,45 @@ a:hover {
     display: block;
     margin-right: auto;
     color: white;
+    }
+
+    
+.name:hover {
+  opacity: 0.5;
+  transform: scale(.95)
+}  
+
+.location:hover{
+   opacity: 0.5;
+   transform: scale(.95)
+
 }
 .nav li {
   padding: 5px 10px 10px 10px;
 }
 .nav a {
-  transition: all .5s;
+  transition: all .1s;
 }
 .nav a:hover {
-  color: white
+  color: white;
 }
 
-header {
+.home {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/cover-photo.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
+
+.expheader {
+  text-align: center;
+  background: url('images/pexels-photo.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
 header {
   line-height: 1.5;
 }
@@ -74,8 +96,38 @@ header .profile-image {
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(720deg);
+  border-radius: 25%;
 }
+
+.title-exp {
+  background-color: #efefef;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 200px auto;
+  opacity: .9  
+}
+
+.treehouse {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.upwork {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -86,7 +138,7 @@ header .profile-image:hover {
 } 
 .location {
   background-color: #222;
-  color: yellow;
+  color:#6abed8;
 }
 .card {
   margin: 30px;
@@ -105,6 +157,21 @@ header .profile-image:hover {
 ul.skills {
   padding: 0;
   text-align: center;
+}
+
+
+
+.skill-level li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skill-level li:nth-child(odd) {
+  background: #0399ff;
 }
 
 .skills li {
